@@ -1,0 +1,14 @@
+# Ignore Data folder
+Data/
+
+# Ignore notebook side files
+notebook_audio/.ipynb_checkpoints
+.ipynb_checkpoints
+
+# Ignore the Python cache files
+__pycache__/
+
+# Ignore pickle files 
+
+learning_features
+learning_labels
