@@ -108,7 +108,7 @@ else :
 
     #mlpclassifer
 
-    model = svm.SVC(C=100, kernel='rbf', class_weight=None, probability=False)
+    model = MLPClassifier(hidden_layer_sizes=(500, 500), max_iter=500, activation= 'tanh', solver= 'adam')
     scaler = preprocessing.StandardScaler(with_mean=True).fit(X_train)
     learningFeatures_scaled = scaler.transform(X_train)
 
